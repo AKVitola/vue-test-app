@@ -1,0 +1,228 @@
+{
+  "data": {
+    "title": "Umfragearten",
+    "pages": [
+      {
+        "name": "Page 1",
+        "title": "Umfragearten",
+        "subttitle": "Haupts\u00e4chlich werden Sie von uns Einladungen zu Online-Umfragen erhalten. Aber Sie k\u00f6nnen auch an anderen spannenden Studien teilnehmen, bei denen Sie zus\u00e4tzliche Punkte erhalten k\u00f6nnen. <br><br>\r\nBitte w\u00e4hlen Sie aus der Liste diejenigen Studienarten, zu denen Sie gern Einladungen erhalten m\u00f6chten. ",
+        "questions": [
+          {
+            "code": "research_telephone_surveys",
+            "name": "Telefon-Interviews",
+            "type": "dropdown",
+            "is_required": true,
+            "public_description": "",
+            "choices": [
+              {
+                "yes": "ja"
+              },
+              {
+                "no": "nein"
+              }
+            ]
+          },
+          {
+            "code": "research_online_group_discussions",
+            "name": "Online-Gruppen-Diskussionen",
+            "type": "dropdown",
+            "is_required": true,
+            "public_description": "Chatrooms, Foren, etc.",
+            "choices": [
+              {
+                "yes": "ja"
+              },
+              {
+                "no": "nein"
+              }
+            ]
+          },
+          {
+            "code": "research_online_diaries_studies",
+            "name": "Online-Tagebuch-Studien",
+            "type": "dropdown",
+            "is_required": true,
+            "public_description": "Studien, in denen wir Sie in einem vordefinierten Zeitraum bitten werden ein Tagebuch, mit unterschiedlichen Aufgaben und zu bestimmten Themen zu f\u00fchren.",
+            "choices": [
+              {
+                "yes": "ja"
+              },
+              {
+                "no": "nein"
+              }
+            ]
+          },
+          {
+            "code": "research_webcam_surveys",
+            "name": "Webcam-Umfragen",
+            "type": "dropdown",
+            "is_required": true,
+            "public_description": "Online-Umfragen, in denen Sie einer Aufnahme \u00fcber Ihre Webcam zustimmen, z.B. f\u00fcr Live-Interviews oder zur Messung von Emotionen.",
+            "choices": [
+              {
+                "yes": "ja"
+              },
+              {
+                "no": "nein"
+              }
+            ]
+          },
+          {
+            "code": "research_mobile_app_tests",
+            "name": "Test von Apps auf Ihrem Smartphone ",
+            "type": "dropdown",
+            "is_required": true,
+            "public_description": "Wir bitten Sie eine App zu testen.",
+            "choices": [
+              {
+                "yes": "ja"
+              },
+              {
+                "no": "nein"
+              }
+            ]
+          },
+          {
+            "code": "research_tasks_studies",
+            "name": "Aufgaben-Studien",
+            "type": "dropdown",
+            "is_required": true,
+            "public_description": "Wir werden Ihnen Aufgabenstellungen geben, die Sie ausf\u00fchren sollen, z.B. ein Foto von einem bestimmten Shop zu schicken, etwas an bestimmten Pl\u00e4tzen zu kaufen (Kosten werden erstattet) etc.",
+            "choices": [
+              {
+                "yes": "ja"
+              },
+              {
+                "no": "nein"
+              }
+            ]
+          },
+          {
+            "code": "research_personal_interviews",
+            "name": "Pers\u00f6nliche Interviews vor Ort",
+            "type": "dropdown",
+            "is_required": true,
+            "public_description": "",
+            "choices": [
+              {
+                "yes": "ja"
+              },
+              {
+                "no": "nein"
+              }
+            ]
+          },
+          {
+            "code": "research_personal_interviews_home",
+            "name": "Pers\u00f6nliche Interviews bei Ihnen zu Hause",
+            "type": "dropdown",
+            "is_required": true,
+            "public_description": "Wenn Sie zustimmen, wird ein Interviewer zu Ihnen nach Hause kommen.",
+            "choices": [
+              {
+                "yes": "ja"
+              },
+              {
+                "no": "nein"
+              }
+            ]
+          },
+          {
+            "code": "research_focus_groups",
+            "name": "Gruppen-Diskussionen vor Ort",
+            "type": "dropdown",
+            "is_required": true,
+            "public_description": "",
+            "choices": [
+              {
+                "yes": "ja"
+              },
+              {
+                "no": "nein"
+              }
+            ]
+          },
+          {
+            "code": "research_product_tests",
+            "name": "Produkt-Tests zu Hause",
+            "type": "dropdown",
+            "is_required": true,
+            "public_description": "Wir werden Ihnen Produkte zu Ihnen nach Hause schicken, die Sie dann testen und im Anschluss im Zuge einer Online-Befragung bewerten.",
+            "filter_choices_by_answer": null,
+            "choices": [
+              {
+                "yes": "ja"
+              },
+              {
+                "no": "nein"
+              }
+            ]
+          },
+          {
+            "code": "research_food_tasting",
+            "name": "Essensverkostungen \/ Weinverkostungen ",
+            "type": "dropdown",
+            "is_required": true,
+            "public_description": "",
+            "choices": [
+              {
+                "yes": "ja"
+              },
+              {
+                "no": "nein"
+              }
+            ]
+          },
+          {
+            "code": "research_mystery_shopping",
+            "name": "Mystery-Shopping oder Service-Tests",
+            "type": "dropdown",
+            "place_holder": null,
+            "is_required": true,
+            "public_description": "Studien, bei denen wir Sie bitten werden das Service in einem bestimmten Shop oder eines Dienstleisters zu nutzen und uns Feedback dazu zu geben.",
+            "filter_choices_by_answer": null,
+            "choices": [
+              {
+                "yes": "ja"
+              },
+              {
+                "no": "nein"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questions": [
+          {
+            "code": "webcam_on_pc",
+            "name": "Haben Sie eine Webcam an dem Computer, mit dem Sie am h\u00e4ufigsten an unseren Umfragen teilnehmen?",
+            "type": "radiogroup",
+            "is_required": true,
+            "public_description": "Wenn Sie zu einer Umfrage eingeladen werden, bei der eine Webcam ben\u00f6tigt wird, stellen Sie bitte sicher, dass Sie an einem Computer mit einer Webcam teilnehmen.",
+            "filter_choices_by_answer": null,
+            "choices": [
+              {
+                "yes": "ja"
+              },
+              {
+                "no": "nein"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "page_next_text": "Weiter",
+    "page_prev_text": "Zur\u00fcck",
+    "complete_text": "Abschicken",
+    "completed_heading": "Vielen Dank f\u00fcr Ihre Teilnahme.",
+    "completed_text": "Ihr Profil wurde erfolgreich aktualisiert.",
+    "completed_actions": [
+      {
+        "label": "Zur\u00fcck zum Profil",
+        "url": "https:\/\/talkonlinepanel.com\/de\/user"
+      }
+    ]
+  }
+}
