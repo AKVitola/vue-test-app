@@ -1,7 +1,7 @@
 <template>
   <section class="button-conatainer">
     <button
-      @click="navigatePreviouse"
+      @click="navigatePrevious"
       :disabled="this.$route.name === 'firstPage'"
       class="button button-back"
     >
@@ -38,15 +38,15 @@ export default {
 
     navigateNext() {
       if (this.$route.name === "firstPage") {
-        return this.$router.push("/secondPage");
+        return this.$router.push("/2");
       }
 
-      return this.$router.push("/finalPage");
+      return this.$router.push("/3");
     },
 
-    navigatePreviouse() {
+    navigatePrevious() {
       if (this.$route.name === "finalPage") {
-        return this.$router.push("/secondPage");
+        return this.$router.push("/2");
       }
 
       return this.$router.push("/");

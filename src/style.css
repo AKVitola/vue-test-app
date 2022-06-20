@@ -1,10 +1,10 @@
 body {
+    box-sizing: border-box;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 .container {
-    box-sizing: border-box;
     padding: 10px 40px 50px 40px;
     border-bottom: 7px solid #E73446;
     min-height: 100vh;
@@ -24,9 +24,6 @@ body {
 
 .page-subtitle {
     font-size: .9em;
-}
-
-.survey-intro {
     margin: 0 0 60px;
 }
 
@@ -39,8 +36,10 @@ body {
 }
 
 .question-label {
+    display: block;
     font-weight: 700;
     font-size: .8em;
+    margin: 0 0 10px;
 }
 
 .required {
@@ -48,7 +47,7 @@ body {
 }
 
 .question-description {
-    margin: 10px 0;
+    margin: 0;
     color: grey;
     font-size: .8em;
 }
@@ -58,11 +57,21 @@ body {
     border: 1px solid lightgray;
     height: 25px;
     color: grey;
+    margin: 10px 0 0;
 }
 
 .dropdown:active,
 .dropdown:focus {
     border: 1px solid grey;
+}
+
+.radio-label {
+    color: grey;
+}
+
+.input-wrap {
+    margin: 10px 0 0;
+    font-size: .8em;
 }
 
 .button-conatainer {

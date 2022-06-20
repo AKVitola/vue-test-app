@@ -6,10 +6,10 @@ export default createStore({
         surveyData: survey,
     },
     getters: {
-        pageTitle(state) {
+        firstPageTitle(state) {
             return state.surveyData.data.pages[0].title;
         },
-        pageSubtitle(state) {
+        firstPageSubtitle(state) {
             return state.surveyData.data.pages[0].subttitle;
         },
         firstPageQuestions(state) {
@@ -23,6 +23,9 @@ export default createStore({
         },
         prevButtonText(state) {
             return state.surveyData.data.page_prev_text;
+        },
+        secondPageTitle(state) {
+            return state.surveyData.data.title;
         },
         secondPageQuestions(state) {
             return state.surveyData.data.pages[1].questions;

@@ -6,8 +6,8 @@ import FinalPage from "../components/FinalPage.vue";
 
 const routes = [
     { path: "/", name: "firstPage", component: FirstPage },
-    { path: "/secondPage", name: "secondPage", component: SecondPage },
-    { path: "/finalPage", name: "finalPage", component: FinalPage }
+    { path: "/2", name: "secondPage", component: SecondPage },
+    { path: "/3", name: "finalPage", component: FinalPage }
 ];
 
 const router = createRouter({
