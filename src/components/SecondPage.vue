@@ -4,7 +4,6 @@
   </h1>
 
   <QuestionComponent />
-
 </template>
 
 <script>

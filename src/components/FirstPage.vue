@@ -6,7 +6,6 @@
   <p class="page-subtitle" v-html="$store.getters.firstPageSubtitle" />
 
   <QuestionComponent/>
-
 </template>
 
 <script>

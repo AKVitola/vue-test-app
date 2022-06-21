@@ -13,6 +13,7 @@
       @click="navigateNext"
       v-if="this.$route.name !== 'finalPage'"
       class="button button-next"
+      :type="isSubmitType()"
     >
       <span class="button-text">
         {{ nextButtonText($store) }}
@@ -50,6 +51,14 @@ export default {
       }
 
       return this.$router.push("/");
+    },
+
+    isSubmitType() {
+      if (this.$route.name === "secondPage") {
+        return "submit";
+      }
+
+      return "button";
     },
   },
 };
