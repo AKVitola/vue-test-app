@@ -12,7 +12,7 @@ import QuestionComponent from "./QuestionComponent";
 export default {
   name: "SecondPage",
   components: {
-    QuestionComponent
-  }
+    QuestionComponent,
+  },
 };
 </script>

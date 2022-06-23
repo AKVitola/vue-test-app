@@ -14,6 +14,7 @@
       v-if="this.$route.name !== 'finalPage'"
       class="button button-next"
       :type="isSubmitType()"
+      form="survey"
     >
       <span class="button-text">
         {{ nextButtonText($store) }}
@@ -39,6 +40,10 @@ export default {
 
     navigateNext() {
       if (this.$route.name === "firstPage") {
+        //Input validation before allowing to proceed to next page
+        //if is required && value is empty => error
+        //else can go to next page
+
         return this.$router.push("/2");
       }
 
@@ -59,6 +64,13 @@ export default {
       }
 
       return "button";
+    },
+
+    submit(event) {
+      event.preventDefault();
+      //Input validation before allowing to submit form
+      //if is required && value is empty => error
+      //else can submit form
     },
   },
 };

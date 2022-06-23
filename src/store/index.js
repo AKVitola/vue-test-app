@@ -1,11 +1,15 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
 import survey from "../../public/survey.json";
+
+//In bigger project where data would actually be taken from API
+//I would have used vuex + axious to efficiently handle all actions with received data
 
 export default createStore({
     state: {
-        surveyData: survey,
+        surveyData: survey
     },
     getters: {
+        //In this case I use getters to keep components cleaner
         firstPageTitle(state) {
             return state.surveyData.data.pages[0].title;
         },

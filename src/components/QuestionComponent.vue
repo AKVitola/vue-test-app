@@ -1,5 +1,5 @@
 <template>
-  <form @submit="submitForm">
+  <form id="survey">
     <div v-if="this.$route.name === 'firstPage'">
       <article
         v-for="question in $store.getters.firstPageQuestions"
@@ -18,11 +18,14 @@
           </p>
 
           <select
-            v-model="selected"
+            :value="question.code"
+            @input="processInput"
             class="dropdown"
             :required="question.is_required"
             :id="question.code"
+            :name="question.code"
           >
+            <option hidden />
             <option
               v-for="(item, key) in question.choices"
               v-bind:key="key"
@@ -57,8 +60,9 @@
             class="input-wrap"
           >
             <input
+              :value="getChoiceValue(item)"
+              @input="processInput"
               type="radio"
-              :v-model="getChoiceValue(item)"
               :required="question.is_required"
               :name="question.code"
               :id="question.code + '-' + getChoiceValue(item)"
@@ -77,36 +81,34 @@
 <script>
 export default {
   name: "QuestionComponent",
-  //   data() {
-  //     return {
-  //       surveyAnswers: {
-  //         research_telephone_surveys: "",
-  //         research_online_group_discussions: "",
-  //         research_online_diaries_studies: "",
-  //         research_webcam_surveys: "",
-  //         research_mobile_app_tests: "",
-  //         research_tasks_studies: "",
-  //         research_personal_interviews: "",
-  //         research_personal_interviews_home: "",
-  //         research_focus_groups: "",
-  //         research_product_tests: "",
-  //         research_food_tasting: "",
-  //         research_mystery_shopping: "",
-  //       },
-  //     };
-  //   },
+  data() {
+    return {
+      //Could not work out a solution to generate these dynamically and not hardcode
+      research_telephone_surveys: "",
+      research_online_group_discussions: "",
+      research_online_diaries_studies: "",
+      research_webcam_surveys: "",
+      research_mobile_app_tests: "",
+      research_tasks_studies: "",
+      research_personal_interviews: "",
+      research_personal_interviews_home: "",
+      research_focus_groups: "",
+      research_product_tests: "",
+      research_food_tasting: "",
+      research_mystery_shopping: "",
+    };
+  },
+
   methods: {
     getChoiceValue(item) {
       const key = Object.keys(item)[0];
 
       return item[key];
     },
-    submitForm(event) {
-      event.preventDefault();
 
-      //TODO form validation - check for emty fields
-      //should validate also before going from first to second page
-      //send the returned form valus to state or console log ?
+    processInput(event) {
+      this[event.target.id] = event.target.value;
+      console.log("Key " + event.target.id + " has value of " + event.target.value);
     },
   },
 };
